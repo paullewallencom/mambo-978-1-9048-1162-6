@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="4.5.3">
+	<name>zaksprings</name>
+	<creationDate>20/11/06</creationDate>
+   	<author>packtpublishing</author>
+  	<copyright>GNU/GPL</copyright>
+   	<authorEmail>doug@packtpub.com</authorEmail>
+   	<authorUrl>http://www.packtpub.com</authorUrl>
+   	<version>1.0</version>
+   	<description>The Template for Zak Springs Golf Club</description>
+
+	<files>
+		<filename>index.php</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<images>
+  		<filename>images/bg_body.jpg</filename>
+		<filename>images/bg_header.jpg</filename>
+		<filename>images/bg_inside.jpg</filename>
+		<filename>images/bg_leftcol.jpg</filename>
+		<filename>images/bg_leftcol_module_th.gif</filename>
+		<filename>images/bg_lhm_inside.jpg</filename>
+		<filename>images/bg_mainlevel.gif</filename>
+		<filename>images/bg_mainlevel_checked.gif</filename>
+		<filename>images/bg_mainlevel_right.gif</filename>
+		<filename>images/bg_module.jpg</filename>
+		<filename>images/bg_module_contenttop.jpg</filename>
+		<filename>images/bg_pagenav.jpg</filename>
+		<filename>images/bg_spacer.gif</filename>
+		<filename>images/bg_topright.jpg</filename>
+		<filename>images/file.html</filename>
+		<filename>images/img_header.jpg</filename>
+		<filename>images/img_header_old.jpg</filename>
+		<filename>images/indent1.png</filename>
+		<filename>images/indent2.png</filename>
+		<filename>images/indent3.png</filename>
+		<filename>images/indent4.png</filename>
+		<filename>images/indent5.png</filename>
+		<filename>images/indent6.png</filename>
+		<filename>images/moduletableth.jpg</filename>
+		<filename>images/readon.png</filename>
+		filename>images/readon_hover.png</filename>
+	</images>
+
+	<css>
+		<filename>css/template_css.css</filename>
+	</css>
+</mosinstall>

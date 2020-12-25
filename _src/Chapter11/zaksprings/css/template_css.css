@@ -1,0 +1,992 @@
+* {
+	font-family: Verdana, Georgia, Arial, Helvetica, sans-serif;
+}
+
+.waterbody {
+	background:#000000;
+	/* url(../images/grass14.jpg)  left top; */
+	
+	margin:0;
+	color:#333333;
+	margin-top:12px;
+	
+	
+}
+
+div,
+td,
+p {
+	font-size:12px;
+/*	font-size:10px; */
+	line-height:18px;
+/*	line-height:14px; */
+	color:#333333;
+	color:#111111;
+}
+
+a,
+a:link,
+a:active,
+a:visited {
+	text-decoration:underline;
+	color:#000000;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+ul {
+	margin: 5px;
+	padding: 5px;
+	list-style: none;
+	list-style-type: square;
+}
+
+li {
+	line-height: 18px;
+	padding-left: 5px;
+	padding-top: 0px;
+	list-style-position: inside;
+}
+
+/** To center the objects **/
+.center {
+	text-align:center!important;
+}
+
+/* ---------------------
+template layout
+--------------------- */
+
+/** wrapper to make the page center **/
+#container {
+	width:900px;
+	margin: 0px auto;
+	padding:0;
+	text-align: left;
+	//border:2px grey solid;
+	
+	
+}
+
+/**
+hold background, it should be float:left
+that's way we can not put it in #container
+**/
+#containerbg {
+	position:relative;
+	width: 900px;
+	background:transparent url(../images/bg_inside6.jpg) repeat-y left top;
+	float:left;
+	top:0;
+	left:0;
+	/*border:2px grey solid; */
+	
+	
+}
+
+#outerleft {
+	position:relative;
+	float:left;
+	clear:left;
+	width:730px;
+	
+}
+
+#outerright {
+	position:relative;
+	width:170px;
+	float:right;
+	clear:right;
+	/*background:transparent url(../images/bg_inside7.jpg) repeat-y left top; */
+	/* Don't put background here, it won't reach to bottom! */
+	
+	
+}
+
+#logo {
+	position:relative;
+	width:100%;
+	height:74px;
+	float:left;
+	background:#FFFFFF url(../images/bg_header.jpg) no-repeat left top;
+}
+
+/** div container for top menu. position:top **/
+#topmenu {
+	position:relative;
+	float:left;
+	clear:left;
+	background-color:#000000;
+	width: 100%;
+	
+	border:1px white solid;
+	/*background-color:#ffffff; */
+	
+	
+}
+
+/** div container for image header **/
+#imgheader {
+	position:relative;
+	float:left;
+	clear:left;
+	width:100%;
+	height:173px;
+
+	background: #000000;
+  /* url( ../images/ZakSpringsBanner900sky.jpg) no-repeat left top; */
+  
+}
+
+#container_inner {
+	position:relative;
+	float:left;
+	clear:left;
+	width:730px;
+}
+
+/** div container for left column **/
+#leftcol {
+	position:relative;
+	float:left;
+	clear:left;
+	width:172px;
+}
+
+#leftcolmenu {
+	position:relative;
+	overflow:auto;
+}
+
+
+/** div wrapper for user2 & user3 **/
+#content_top_wrapper {
+	position:relative;
+	float:right;
+	clear:right;
+	width:542px;
+	display:inline;
+	margin: 4px 8px 0 0;
+	
+}
+
+/** div container for position:user2 **/
+#content_top1 {
+	position:relative;
+	float:left;
+	clear:left;
+	width:269px;
+}
+
+/** div container for position:user3 **/
+#content_top2 {
+	position:relative;
+	float:right;
+	clear:right;
+	width:269px;
+}
+
+/** div container for mainbody **/
+#content_main {
+	position:relative;
+	float:left;
+	width:520px;
+	margin: 0px 0px 8px 8px;
+	background-color:#FFFFFF;
+	padding:8px;
+	border:2px grey solid;
+
+}
+
+/** div container for right column **/
+#rightcol_top,
+#rightcol {
+	float:left;
+	clear:left;
+	width:168px;
+	margin:0 0 0 1px;
+	display:inline;
+	overflow:auto;
+}
+
+/** div container for right column position:header **/
+#rightcol_top {
+	height:70px;
+	min-height:70px;
+	
+	
+	height:173px;
+}
+
+/** div container for banner position:banner **/
+#banner {
+	position:relative;
+	clear:left;
+	float:left;
+	width:515px;
+	height:65px;
+	min-height:65px;
+	color:#FFFFFF;
+	font-size:10px;
+	padding: 20px 0 0 215px;
+}
+
+#blackline {
+	position:relative;
+	clear:left;
+	float:left;
+	width:730px;;
+	height:10px;
+	min-height:10px;
+	background-color: #000000;
+	color:#FFFFFF;
+	font-size:10px;
+}
+
+/** copyright **/
+
+#copyright {
+	position:relative;
+	width:900px;
+	display:block;
+	clear:both;
+	float:left;
+}
+
+#copyright div {
+	color:#666666;
+	font-size:10px;
+	font-weight:bold;
+	display:block!important;
+	width:900px;
+	float:left;
+	clear:left;
+	margin:-10px 0 0 0;
+	text-align:left;
+}
+
+
+
+/* ---------------------
+mambo content layout
+--------------------- */
+
+/** pathway block **/
+span.pathway {
+	display:block;
+	text-align:left;
+	color:#000000;
+	font-size:10px;
+	font-weight:bold;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E5E5E5;
+	height:20px;
+	margin-bottom:10px;
+}
+
+/** content title **/
+.componentheading {
+	font-family:Georgia, "Times New Roman", Times, serif !important;
+	color:#000000;
+	font-size: 20px;
+	line-height:25px;
+	padding: 5px 0 5px 0;
+	display:block;
+}
+
+.contentheading,
+.contentpagetitle,
+a.contentpagetitle:link,
+a.contentpagetitle:active,
+a.contentpagetitle:visited {
+	font-family:Georgia, "Times New Roman", Times, serif !important;
+	font-size:18px;
+	color:#0C362D;
+	padding-top: 25px;
+	background-color:inherit;
+	display:block;
+}
+
+.contentpaneopen {
+	width:100%;
+}
+
+
+.buttonheading {
+	width: 16px!important;
+	text-align:right;
+}
+
+
+td.sectiontableheader {
+	font-weight: bold;
+}
+
+.category, .categorytitle {
+	font-weight: bold;
+	color:#0C362D;
+	background-color:inherit;
+}
+
+.sectiontableentry1,
+table.pollstableborder tr.sectiontableentry1 {
+	background-color: #FBFBF4;
+	padding: 2px;
+	color:#333333;
+	
+}
+
+.sectiontableentry2,
+table.pollstableborder tr.sectiontableentry2 {
+	background-color: #FFFFFF;
+	padding: 2px;
+	color:#333333;
+}
+
+tr.sectiontableentry1 td,
+tr.sectiontableentry2 td {
+	word-wrap:break-word;
+}
+
+/** blog Styles **/
+.blogsection {
+	color:#0C362D;
+	background-color:inherit;
+}
+
+.blog_more {
+	font-weight: bold;
+	line-height: 25px;
+	padding-top: 20px;
+	color: #0C362D;
+	border-bottom: 1px solid #E5E5E5;
+	background-color:inherit;
+}
+
+/** small text in content **/
+.small {
+	color:#8B721D;
+	font-size:10px;
+	font-weight: normal;
+	background-color:inherit;
+}
+
+/** date info in content **/
+#content_main .createdate {
+	color:#6EB28A;
+	font-size:10px;
+	padding: 0 0 15px 0;
+	line-height:8px;
+	background-color:inherit;
+}
+
+#content_main .modifydate {
+	color:#8B721D;
+	font-size:10px;
+	padding: 0;
+	background-color:inherit;
+	
+	
+	
+}
+
+
+
+/** content item navigation  **/
+.pagenavbar  {
+	display:block;
+	width:100%;
+	background-color:inherit;
+	height:20px;
+	line-height:25px;
+	text-align:right;
+	letter-spacing:2px;
+	color:#999999!important;
+	clear:both;
+	font-size: 11px!important;
+	margin-top: 10px;
+	background-image: url(../images/bg_pagenav.jpg);
+	background-repeat: repeat-x;
+	background-position: center bottom;	
+}
+
+.pagenav {
+	height:20px;
+	line-height:25px;
+	text-align:right;
+	letter-spacing:2px;
+	color:#999999;
+	clear:both;
+	font-size: 11px;
+	margin-left: 0;
+	margin-right: 0;
+	background-color:inherit;
+}
+
+.back_button {
+	display:block;
+	text-align:left;
+	font-weight:bold;
+	font-size:12px;
+	width:100%;
+	margin-bottom:10px;
+	letter-spacing:2px;
+}
+
+/** highlight word search result **/
+.highlight {
+	font-weight:bold;
+	background-color: #FFFF00;
+	padding: 2px 0 2px 0;
+	
+}
+
+/** table of content layout **/
+table.contenttoc {
+	border:1px solid #000000;
+	padding:1px;
+	width:130px;
+	margin: 0 0 10px 10px;
+}
+
+/** table of content header **/
+.contenttoc th {
+	color:#FFFFFF;
+	background-color:#666666;
+	font-size:11px;
+	display:block;
+	width:124px;
+}
+
+/** unordered list for latest news module **/
+ul.latestnews li,ul.mostread li {
+	line-height: 18px;
+	font-size:11px;
+	font-weight:bold;
+	list-style-type: none;
+	list-style-position: outside;
+}
+
+
+/** fix opera table width for content list in table category**/
+table.contentpane td.contentdescription {
+	width:100%!important;
+}
+
+
+/* ---------------------
+Links
+--------------------- */
+
+/** any left column link **/
+#leftcol a:link,
+#leftcol a:active,
+#leftcol a:visited,
+#leftcolmenu a:link,
+#leftcolmenu a:active,
+#leftcolmenu a:visited,
+#rightcol a:link,
+#rightcol a:active,
+#rightcol a:visited,
+#rightcolmenu a:link,
+#rightcolmenu a:active,
+#rightcolmenu a:visited
+ {
+	color:#FFFFFF;
+}
+
+a.pagenav:link ,
+a.pagenav_next:link,
+a.pagenav_pre:link,
+div.back_button a,
+div.back_button a:link,
+a.latestnews:link,
+a.latestnews:active,
+a.latestnews:visited,
+a.mostread:link,
+a.mostread:active,
+a.mostread:visited {
+	text-decoration:none;
+}
+
+/*** read more link ***/
+.readon,
+a.readon:link,
+a.readon:active,
+a.readon:visited {
+	color:#666666;
+	font-weight:bold;
+	text-align:left;
+	margin-top:10px;
+	letter-spacing: 2px;
+	font-size:10px;
+	text-decoration:none;
+	float:right;
+	background-image: url(../images/readon2.png);
+	padding-left:8px;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-right:4px;
+	border:2px grey solid;
+	
+}
+
+/*** blog links ***/
+a.blogsection:link,
+a.blogsection:active,
+a.blogsection:visited {
+	color:#0C362D;
+	text-decoration:none;
+}
+
+/** generic menu item link **/
+a.mainlevel:link,
+a.mainlevel:active,
+a.mainlevel:visited,
+a.sublevel:link,
+a.sublevel:active,
+a.sublevel:visited {
+	color:#FFFFFF;
+	text-decoration:none;
+	font-size:11px;
+	line-height: 27px;
+	
+	
+/*	border:1px white solid; */
+}
+
+a.sublevel:hover {
+
+	color: #000000;
+}
+
+/** generic menu item link on mouseover **/
+a.mainlevel:hover,
+#leftcol a.mainlevel:hover,
+#leftcolmenu a.mainlevel:hover {
+	background-color:#6e6e6e;
+	color:#000000!important;
+	text-decoration:none!important;
+}
+
+/** specific top right column menu item link **/
+a.mainlevel-right:link,
+a.mainlevel-right:active,
+a.mainlevel-right:visited,
+a.sublevel-right:link,
+a.sublevel-right:active,
+a.sublevel-right:visited {
+	color:#FFFFFF;
+	text-decoration:none;
+	font-size:11px;
+}
+
+/** specific top right column menu item link on mouseover **/
+a.mainlevel-right:hover {
+	background-color:#15604F;
+	text-decoration:none;
+}
+
+
+/** pathway link item **/
+a.pathway:link,
+a.pathway:link,
+a.pathway:active,
+a.pathway:visited {
+	color:#999999;
+	text-decoration:none;
+}
+
+
+/** table of content list **/
+a.toclink:link,
+a.toclink:active,
+a.toclink:visited {
+	color:#0C362D;
+	font-size:11px;
+	padding:2px 10px 2px 10px;
+	display:block;
+	text-decoration:none;
+}
+
+.pagenavbar a:link,
+.pagenavbar a:active,
+.pagenavbar a:visited  {
+	letter-spacing:2px;
+	color:#000000;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.pagenavbar a:hover {
+	color:#0C362D;
+}
+
+/** latestnews and popular **/
+.latestnews,
+.mostread {
+	color:#000000;
+}
+
+
+
+a.latestnews:link,
+.mostread a:link,
+.latestnews a:active,
+.mostread a:active,
+.latestnews a:hover,
+.mostread a:hover,
+.latestnews a:visited,
+.mostread a:visited {
+	color:#000000;
+	text-decoration:underline;
+}
+
+/** underline on hover **/
+a.toclink:hover,
+a.latestnews:hover,
+a.mostread:hover,
+a.pathway:hover,
+a.sublevel:hover,
+a.sublevel-right:hover,
+a.blogsection:hover,
+a.readon:hover,
+a.pagenav:hover ,
+a.pagenav_next:hover,
+a.pagenav_pre:hover,
+a.latestnews:hover {
+	text-decoration:underline;
+	color:#0C362D;
+	background-color:inherit;
+}
+
+#leftcol a:hover {
+	/*color: #000000; */
+	color: #527428;
+	
+	text-decoration:underline;
+}
+
+a.readon:hover { background: url(../images/readon2_hover.png) }
+
+#active_menu {
+background: #527428;
+
+margin-left:2px;
+margin-right:2px;
+
+/*border:4px red solid; */
+}
+
+#active_menu {
+   background: #527428;
+   margin-left:2px;
+   margin-right:2px;
+}
+
+/* ---------------------
+mambo module layout
+--------------------- */
+
+/** general module table **/
+table.moduletable,
+#leftcol table,
+#rightcol table {
+	width:100%;
+	float:left;
+	clear:left;
+}
+
+/** general module table **/
+#rightcol table,
+#leftcol table td {
+	font-size:11px !important;
+	color:#FFFFFF;
+}
+
+#rightcol table,
+#rightcol table td {
+	font-size:11px !important;
+	color:#FFFFFF;
+}
+
+/** general module title **/
+table.moduletable th {
+	/*border: solid 1px black; */
+	
+
+
+	color:#FFFFFF;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size:13px;
+	line-height:25px;
+	background-color: #6EB28A;
+	height:22px;
+	text-align:left;
+	padding-left:15px;
+	font-weight:normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	
+	
+	
+	
+}
+
+
+#leftcol table.moduletable th {
+	background-color: #8F8A2C;
+	color: #000000;
+/*	border: solid 1px #000000; */
+	background: url(../images/moduletableth.jpg) 		repeat-y left top;
+
+	border-top:1px grey solid;
+	border-bottom:1px grey solid;
+
+}
+
+#leftcol table.moduletable { margin-bottom:8px;
+border-top:1px grey solid;
+border-bottom:1px grey solid;
+
+background:transparent url(../images/bg_inside5.jpg) repeat-y left top;
+	
+	
+}
+
+#rightcol table.moduletable th {
+	background-color:#6EB28A;
+	border: solid 1px #000000;
+}
+
+
+/** specific module td table for content top 1 and 2. 
+position:user2 an user3 **/
+#content_top1 table.moduletable td,
+#content_top2 table.moduletable td {
+	background-color:#F2FFF2;
+	height:100px;
+	min-height:100px;
+	vertical-align:top;
+}
+
+/** right column module td **/
+#rightcol table.moduletable td   {
+	padding:5px;
+}
+
+/** generic menu item **/
+
+.mainlevel  {
+	display:block;
+	font: bold 11px/25px Arial, Helvetica, sans-serif !important;
+	padding-left:15px;
+	background:transparent url(../images/bg_mainlevel2.jpg) repeat-x center top;
+	border-top:2px #808080 dotted;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+/** specific left column form **/
+#leftcol form {
+	margin-left:15px;
+}
+
+/** specific left column form **/
+#leftcol .button {
+	font-size:11px;
+	color:#FFFFFF;
+	background-color:#C4BD40;
+	border: 1px solid #746A39;
+	width:140px;
+}
+
+
+/** specific left column form **/
+#leftcol .inputbox {
+	font-size:11px;
+	font-weight: bold;
+}
+
+/** module styles in #leftcol **/
+#leftcol table.moduletable td {
+	color:#FFFFFF;
+	font-size:11px;
+}
+
+/** search div in top right column. position:user4 **/
+div.search {
+	margin-left:10px;
+}
+
+/** search field in search div **/
+.search .inputbox {
+	width:145px;
+	border: 1px solid #000000;
+}
+
+/* ---------------------
+mambo form layout
+--------------------- */
+
+/** left column input form **/
+#leftcol .inputbox {
+	font-size:11px;
+	margin-bottom:2px;
+}
+
+
+
+/** input button html tag **/
+.button,
+#rightcol .button {
+	font-size:11px;
+	text-transform:uppercase;
+	color:#FFFFFF;
+	font-weight:bold;
+	background-color:#000000;
+	border: 1px solid #666666;
+}
+
+.search  {
+	margin-top:30px;
+}
+
+
+
+
+/* 
+mambo top menu layout
+you need to add menu class suffix: -nav
+*/
+
+
+
+/** unordered list top menu **/
+ul#mainlevel-nav
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.8em;
+	float:right;
+	
+	
+	
+}
+
+/** unordered list item for top menu **/
+ul#mainlevel-nav li
+{
+	display: block;
+	padding-left: 0px;
+	padding-right: 0px;
+	float: left;
+	margin: 0;
+	width: auto !important;
+	font-size: 11px;
+	line-height: 23px;
+	white-space: nowrap;
+	
+	
+	
+}
+
+/** unordered list item link for top menu **/
+ul#mainlevel-nav li a
+{
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+/** unordered list item link for top menu for firefox only **/
+#topmenu>ul#mainlevel-nav li a {
+	width: auto;
+}
+
+/** unordered list item for top menu for firefox only **/
+ul#mainlevel-nav li a:hover {
+	background: #535353;
+	text-decoration:none;
+}
+
+
+ /*
+specific right column menu item. position:right
+you need to add menu class suffix: -right and
+module class suffix: -right
+ */
+.mainlevel-right {
+	display:block;
+	height:25px;
+	line-height:25px;
+	padding-left:15px;
+	background:#0C362D url(../images/bg_mainlevel_right.gif) repeat-x center top;
+	font-weight:bold;
+}
+
+/** 
+moduletable specific with background image
+you need to add modules class suffix: -bgimg
+ **/
+table.moduletable-bgimg {
+	background:transparent url(../images/bg_module.jpg) no-repeat center bottom;
+	float:left;
+	clear:left;
+	width:100%;
+}
+
+table.moduletable-bgimg td {
+	padding: 5px ;
+	font-size:11px;
+}
+
+table.moduletable-bgimg td td {
+	padding: 0!important;
+}
+
+/** for polls **/
+.poll {
+	font-size:11px;
+	line-height: 16px;
+}
+
+table.pollstableborder .sectiontableentry2 {
+	background-color:transparent; 
+	text-align:left; 
+}
+table.pollstableborder .sectiontableentry1 {
+	background-color:#092620; 
+	text-align:left;
+}
+
+.moduletable_bgimg table.pollstableborder td.sectiontableentry2,
+.moduletable_bgimg table.pollstableborder td.sectiontableentry1 {
+	background-color:transparent!important; 
+	text-align:left!important; 
+}
+
+
+#bottompadding	{
+	position:relative;
+	width:900px;
+	display:block;
+	height:0px;
+	margin-top:-100px;
+}
+
+#bottommenu {
+
+   width:350px;
+   text-align:center;
+
+   margin-bottom:32px;
+
+}
